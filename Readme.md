@@ -3,4 +3,4 @@ A dockerfile to run SyncThing. It expects a  partition to store data mapped to /
 
 Thjis repo also includes an example docker-compose file to use with this repo.
 ##Example run command
-/docker run -d --restart=always --name SyncThing -v /volumes:/home/syncthing/volumes -v /opt/syncthing:/home/syncthing/.config/syncthing -p 8384:8384 -p 22000:22000 -p 21027:21027/udp adamant/syncthing
+`docker run -d --restart=always --name SyncThing -v /volumes:/home/syncthing/volumes -v /opt/syncthing:/home/syncthing/.config/syncthing -p 8384:8384 -p 22000:22000 -p 21027:21027/udp adamant/syncthing`

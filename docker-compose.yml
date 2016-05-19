@@ -1,0 +1,12 @@
+version: '2'
+services:
+ syncthing:
+  build: .
+  volumes:
+   - /volumes:/home/syncthing/volumes
+   - /opt/syncthing:/home/syncthing/.config/syncthing
+  ports:
+   - "8384:8384"
+   - "22000:22000"
+   - "21027:21027/udp"
+  restart: always

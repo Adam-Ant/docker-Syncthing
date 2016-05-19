@@ -1,0 +1,2 @@
+#SyncThing
+A dockerfile to run SyncThing. It expects a  partition to store data mapped to /home/syncthing/.config/syncthing in the container, and a volume where your synced folders are stored at /home/syncthing/volumes. Enjoy!
